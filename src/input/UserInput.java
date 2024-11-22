@@ -1,6 +1,8 @@
+package input;
+
 import java.util.Scanner;
 
-public class UserInput {
+public class UserInput implements Input {
     private Scanner scanner;
 
     public UserInput() {

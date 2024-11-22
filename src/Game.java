@@ -1,12 +1,13 @@
+import checker.NumberChecker;
+import generator.Generator;
+import input.Input;
+import checker.Checker;
+
 public class Game {
-    public static void main(String[] args) {
+
+    public Game(Generator generator, Input input, Checker checker){
         int min = 1;
         int max = 100;
-
-        NumberGenerator generator = new NumberGenerator(min, max);
-        UserInput input = new UserInput();
-        NumberChecker checker = new NumberChecker();
-
         int targetNumber = generator.generate();
         System.out.println("Вгадайте число від " + min + " до " + max + ".");
 
@@ -30,7 +31,6 @@ public class Game {
                 System.out.println("Будь ласка, введіть коректне число.");
             }
         }
-
-        input.close();
     }
+
 }

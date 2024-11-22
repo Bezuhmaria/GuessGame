@@ -1,6 +1,8 @@
+package generator;
+
 import java.util.Random;
 
-public class NumberGenerator {
+public class NumberGenerator implements Generator {
     private int min;
     private int max;
 
