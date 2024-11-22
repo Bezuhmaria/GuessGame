@@ -6,9 +6,9 @@ public class NumberGenerator implements Generator {
     private int min;
     private int max;
 
-    public NumberGenerator(int min, int max) {
-        this.min = min;
-        this.max = max;
+    public NumberGenerator() {
+        this.min = 1;
+        this.max = 100;
     }
 
     public int generate() {

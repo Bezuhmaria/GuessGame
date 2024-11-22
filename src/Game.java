@@ -24,7 +24,7 @@ public class Game {
                 String result = checker.checkGuess(guess, targetNumber);
                 System.out.println(result);
 
-                if (result.equals("Ви вгадали!")) {
+                if (result.equals("Вірно!")) {
                     break;
                 }
             } catch (NumberFormatException e) {
